@@ -7,7 +7,7 @@ function Urlshortener() {
     const [shortenlink,setshortlink] = React.useState(" ");
 
     const shortlink =async()=>{
-      const url = 'http://localhost:3000/short';
+      const url = 'https://serverurlshort.vercel.app/short';
       
       const response = await axios.post(url,{longUrl});
       setshortlink(response.data.shortUrl);
