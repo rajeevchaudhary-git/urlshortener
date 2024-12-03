@@ -4,6 +4,7 @@ import React from 'react';
 function Urlshortener() {
     const [longUrl, setlongUrl] = React.useState(''); 
     const [flag, setflag] = React.useState(false); 
+     const [loader, setloader] = React.useState(false); 
     const [shortenlink,setshortlink] = React.useState(" ");
 
     const shortlink =async()=>{
@@ -30,12 +31,13 @@ function Urlshortener() {
                     />
                 </div>
                 <div className="mt-6">
-                <input 
+                    {loader ? "loading..." : (<input 
                         className={`${flag?'':'hidden'} p-2 w-[500px] rounded-md h-[50px]`}  
                         value={shortenlink} 
                         type="text" 
                         disabled
-                    />
+                    />)}
+                
                 </div>
                 <div className="mt-6">
                    <button type='button' onClick={shortlink} className='bg-orange-500 p-3 rounded-md hover:bg-green-300 transition-all duration-500 shadow-emerald-300 text-ellipsis font-semibold'>Short Link</button>
