@@ -8,12 +8,14 @@ function Urlshortener() {
     const [shortenlink,setshortlink] = React.useState(" ");
 
     const shortlink =async()=>{
+        setloader(true);
       const url = 'https://sxs-five.vercel.app/short';
       
       const response = await axios.post(url,{longUrl});
       setshortlink(response.data.shortUrl);
     //   console.log(response.data.shortUrl);
       setflag(true);
+        setloader(false);
       
     }
 
