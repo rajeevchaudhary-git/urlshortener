@@ -1,7 +1,6 @@
 ```markdown
 # 🌐 URL Shortener 🚀  
-![URL Shortener](https://via.placeholder.com/1200x400.png?text=URL+Shortener)  
-
+![URL Shortener] https://urlshortener-pearl.vercel.app/
 ### 📄 About the Project  
 Simplify your long and clunky URLs into short, shareable links with this modern **URL Shortener** application. Built with cutting-edge technologies, it ensures smooth performance and a clean user experience.
 
