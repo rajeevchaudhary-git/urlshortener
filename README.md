@@ -39,7 +39,7 @@ Simplify your long and clunky URLs into short, shareable links with this modern 
 ### 🚀 Installation & Setup  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/url-shortener.git
+   git clone https://github.com/rajeevchaudhary-git/urlshortener
    cd url-shortener
    ```
 
